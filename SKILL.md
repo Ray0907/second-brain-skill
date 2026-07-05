@@ -141,7 +141,7 @@ before filing — this determines the note's shape, not just its folder.
 
 | Type | What it is | Digestion process | Folder |
 |---|---|---|---|
-| **P**rocedural | How to do something (a technique, a workflow, code pattern) | Practice — must be used, not memorized | `procedural/` |
+| **P**rocedural | How to do something (a technique, a workflow, code pattern) | Practice — must be used, not memorized. For a problem-solving technique specifically, frame the practice run as Pólya's four steps (understand → plan → carry out → look back), not just "try it once" | `procedural/` |
 | **A**nalogous | Reminds you of something you already know | Critique — how far does the analogy hold, where does it break | `analogous/` |
 | **C**onceptual | Facts, theories, relationships, the "what" | Mapping — connect to other concepts, no note is an island | `conceptual/` |
 | **E**vidence | Concrete facts/stats/cases that support a concept | Store + rehearse — apply it in an explanation later | `evidence/` |
@@ -216,7 +216,7 @@ material that's already solid. Be direct about which failure it is.
    answer before moving on:
    - Procedural → ask them to walk through doing it, not describe it
    - Analogous → ask where their analogy breaks (if they never critiqued it, this is where it shows)
-   - Conceptual → ask how this connects to something else in the vault, or to solve a small problem with it
+   - Conceptual → ask how this connects to something else in the vault, or pose a small problem to solve with it — walk it through Pólya's four steps rather than accepting a jump straight to the answer: what's known/unknown (understand), "do you know a related problem?" (plan — this is the connection question), execute (carry out), then "can you use this result or method for some other problem?" (look back)
    - Evidence/Reference → direct recall, no peeking
 4. **Grade bluntly.** If they recite the note back, that's memorization, not
    learning — say so. If they can extend, apply, or connect it unprompted,
@@ -231,9 +231,9 @@ material that's already solid. Be direct about which failure it is.
      corrected approach right now
    - Analogous → don't hand them the critique, push back on their answer and
      make them re-derive where it holds/breaks themselves
-   - Conceptual → don't state the connection, ask a follow-up that forces
-     them to construct it (e.g. "how does that relate to X you already
-     stored?")
+   - Conceptual → don't state the connection or the answer, roll back to
+     the plan step (the connection question from the quiz above) and make
+     them redo it out loud before executing again
    - Evidence/Reference → direct correction is fine here, there's no deeper
      process to route through
    Only move on once they've produced the corrected version themselves, not

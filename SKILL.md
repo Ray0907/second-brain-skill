@@ -223,7 +223,22 @@ material that's already solid. Be direct about which failure it is.
    that's real. Name the specific gap ("you've never practiced this," "this
    concept has zero connections after two weeks") rather than generic
    encouragement.
-5. **Update the note** whose gap was exposed: flip `practiced: true` if they
+5. **When an answer falls short, fix it through that note's own PACER
+   digestion process — not a generic explanation.** Explaining the right
+   answer in prose just adds another layer of passive consumption, the exact
+   thing PACER exists to avoid. Instead:
+   - Procedural → don't describe the fix, make them redo the task with the
+     corrected approach right now
+   - Analogous → don't hand them the critique, push back on their answer and
+     make them re-derive where it holds/breaks themselves
+   - Conceptual → don't state the connection, ask a follow-up that forces
+     them to construct it (e.g. "how does that relate to X you already
+     stored?")
+   - Evidence/Reference → direct correction is fine here, there's no deeper
+     process to route through
+   Only move on once they've produced the corrected version themselves, not
+   after you've explained it to them.
+6. **Update the note** whose gap was exposed: flip `practiced: true` if they
    just demonstrated it, add the connection they just made, or leave a note
    that it's still shaky. The roast should leave the vault stronger, not just
    the user's ego bruised.

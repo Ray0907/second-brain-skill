@@ -1,6 +1,6 @@
 ---
 name: second-brain
-description: Use whenever the user shares something they're learning (an article, transcript, book excerpt, code pattern, research finding) and wants to retain it, or says things like "help me learn this", "add this to my second brain", "I just read/watched X" — captures it into a permanent markdown knowledge base classified by learning type. Also use when the user wants to test their retention with phrases like "roast me", "quiz me", "test what I know", or "check my second brain" — pulls from stored notes to expose gaps instead of just re-reading them back.
+description: Use whenever the user shares something they're learning (an article, transcript, book excerpt, code pattern, research finding) and wants to retain it, or says things like "help me learn this", "add this to my second brain", "I just read/watched X" — captures it into a permanent markdown knowledge base classified by learning type. Also use when the user wants to test their retention with phrases like "roast me", "quiz me", "test what I know", or "check my second brain" — pulls from stored notes to expose gaps instead of just re-reading them back. Also use when the user asks a question they want answered from their stored notes, e.g. "according to my second brain", "answer this from my second brain", "what do my notes say about X".
 ---
 
 # Second Brain
@@ -11,8 +11,9 @@ learning framework: information only sticks if it goes through the right
 without digestion is just future homework — a note that skips its process is
 worse than no note, because it feels like it was learned.
 
-Two modes: **capture** (file new material) and **roast** (quiz against what's
-stored, and call out what was never properly digested).
+Three modes: **capture** (file new material), **roast** (quiz against what's
+stored, and call out what was never properly digested), and **consult**
+(answer a question from what's stored).
 
 ## Hierarchy: PACER is the direction, everything else is placement detail
 
@@ -66,6 +67,13 @@ lands changes.
      builds the graph view automatically.
    - Read existing notes the same way (via the MCP tool) when scanning for
      roast mode or searching for connections.
+   - **The whole vault is reference material, not just the PACER folders.**
+     When digesting a capture (finding connections, critiquing an analogy) or
+     picking roast questions, search the entire vault with
+     `obsidian_simple_search` / `obsidian_complex_search` — the user's
+     pre-existing notes count as "related concepts" and may be linked with
+     `[[wikilinks]]` exactly like second-brain notes. Never modify a
+     non-PACER vault note; read and link only.
 2. **No Obsidian MCP tool found**: fall back to plain files at
    `~/.second-brain/`, exactly as described below. This requires no setup and
    is the default for most users.
@@ -164,7 +172,7 @@ mention secondary types in the frontmatter — don't force a single label.
    failure mode the framework warns against:
    - Procedural → write what practicing this would concretely look like, mark it unpracticed
    - Analogous → write an actual critique (where it holds, where it breaks)
-   - Conceptual → link to at least one related existing note in `conceptual/` (search first); if genuinely nothing relates yet, say so explicitly
+   - Conceptual → link to at least one related existing note (search first — with the Obsidian backend, search the whole vault, not just `conceptual/`); if genuinely nothing relates yet, say so explicitly
    - Evidence/Reference → keep it short, store it, no essay
 5. **Update `~/.second-brain/index.md`** with a link to the new note under its
    type heading. This is the graph — without it, notes are just files in
@@ -198,6 +206,28 @@ practiced: false        # procedural only — flip true once actually used
 
 Only include the section relevant to the note's type. Evidence/Reference
 notes skip both — just the content and frontmatter.
+
+## Consult mode
+
+The user asks a question and wants it answered *from their stored knowledge*
+("according to my second brain, how should I think about this?",
+"what do my notes say about X").
+This is retrieval + grounded answering, not capture and not a quiz.
+
+1. **Search the notes** for anything relevant: `index.md` + the type folders,
+   or with the Obsidian backend, `obsidian_simple_search` /
+   `obsidian_complex_search` across the whole vault.
+2. **Answer grounded in what was found**, citing which notes it came from
+   (`[[note-slug]]`). Prefer the user's own words/framing from the notes over
+   a generic textbook answer — the point is surfacing *their* accumulated
+   thinking.
+3. **Keep sources honest.** Clearly separate "your notes say X" from "my
+   general knowledge adds Y". If nothing in the vault is relevant, say so
+   plainly and just answer normally — never dress up general knowledge as if
+   it came from their notes.
+4. If answering exposed a gap or produced a genuinely new connection, offer
+   (don't silently do it) to capture it as a new note or add a `[[wikilink]]`
+   between the notes involved.
 
 ## Roast mode
 

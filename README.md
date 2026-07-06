@@ -96,7 +96,7 @@ cp -r second-brain ~/.claude/skills/
 Or clone this repo directly there:
 
 ```bash
-git clone <this-repo-url> ~/.claude/skills/second-brain
+git clone https://github.com/Ray0907/second-brain-skill.git ~/.claude/skills/second-brain
 ```
 
 No further setup needed for the plain-files backend. For the Obsidian

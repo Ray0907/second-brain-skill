@@ -12,7 +12,7 @@ feels like it was learned when it wasn't.
 
 ## What it does
 
-Two modes:
+Three modes:
 
 - **Capture** — share something you're learning ("add this to my second
   brain", "I just read/watched X"), and the skill classifies each distinct
@@ -27,6 +27,12 @@ Two modes:
   uncritiqued analogies, unconnected concepts) to expose what was never
   properly digested, instead of just re-testing material that's already
   solid.
+- **Consult** — ask a question you want answered *from your stored knowledge*
+  ("according to my second brain, how should I think about this?"). The skill
+  searches your notes (the whole Obsidian vault, if connected), answers
+  grounded in what it finds with `[[note]]` citations, and clearly separates
+  "your notes say X" from general knowledge — if nothing relevant is stored,
+  it says so instead of pretending.
 
 ## Why PACER instead of one big note pile
 
@@ -106,6 +112,8 @@ Just talk naturally — the skill triggers on intent, not a slash command:
 "roast me"
 "quiz me on what I've stored"
 "check my second brain"
+"according to my second brain, what should I do about X?"
+"what do my notes say about X?"
 ```
 
 ## License
